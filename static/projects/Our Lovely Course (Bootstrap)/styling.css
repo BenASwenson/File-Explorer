@@ -1,0 +1,167 @@
+/*make body positioned relative so scroll spy works and add font family*/
+body{
+    font-family: Vollkorn, sans-serif;
+    position: relative;
+}
+
+/*set video as background and make it fixed and make it spread across whole page and sets behind other elements*/
+video#bgvideo{
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -100;
+}
+
+/*Video does not work in small devices:
+-hide the video and set picture as background (use media queries)
+-make it spread across the whole webpage*/
+@media (max-width: 768px){
+    body{
+        background: url(images/sky_red.jpg) center center fixed;
+        background-size: cover;
+    }
+    #bgvideo{
+        display: none;
+    }
+}
+
+/*style navigation bar using css*/
+.navbar{
+    background-color: rgba(255,202,10,0.3);
+    font-size: 18px;
+    padding: 5px;
+/*    border: 1px solid rgba(86,40,54,0.8);*/
+}
+.navbar-toggler-icon{
+    height: 15px;
+    width: 15px
+}
+#navbarCollapse ul{
+    margin-left: auto;
+    margin-top: 5px;
+}
+.navbar-nav li{
+    border: 1px solid rgba(255,202,10,0.8);
+    padding: 0px 10px;
+}
+.navbar-nav li:hover{
+    background-color: rgba(255,202,10,0.4);
+}
+
+/*style home section and elements inside:
+-reduce the margin-bottom of h1 and h2.
+-style the button and its hover state*/
+#home{
+    color: #fff;
+    text-align: center;
+    padding-top: 15%;
+}
+#home h1{
+    margin-bottom: 30px;
+}
+#home h2{
+    margin-bottom: 50px;
+}
+#home .btn{
+    color: #fff;
+    background-color: rgba(255,202,10,0.8);
+    border-radius: 8px;
+    padding: 8px 20px;
+}
+#home .btn:hover{
+    background-color: rgba(255,202,10,0.4);
+}
+
+/*style about section:
+-extra top padding so scroll spy recognised section earlier
+-max-width of section limited to 1000px
+-heading bold
+-dimensions of icons*/
+.container{
+    max-width: 1000px;
+}
+#about{
+    color: #fff;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+#about h2{
+    font-weight: bold;
+}
+#about p{
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.aboutImage{
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+/*style slider:
+-extra top padding for scroll spy
+-set width of carousel
+-change height of pictures
+-move captions under pictures*/
+#promise{
+    padding-top: 250px;
+}
+#myCarousel{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.carousel-inner .carousel-item img{
+    height: 400px;
+/*    margin: 0 auto;*/
+    
+}
+.carousel-caption{
+    position: relative;
+    left: auto;
+    right: auto;
+    padding-top: 40px;
+    height: 200px;
+}
+
+/*style images in carousel and navbrand header for different device sizes*/
+@media (max-width: 768px){
+    .carousel-inner .carousel-item img{
+        height: 300px;
+    }
+    .carousel-inner h2{
+        font-size: 23px;
+    }
+    .navbar .navbar-brand{
+        font-size: 15px;
+    }
+    #home{
+        padding-top: 200px;
+    }
+    
+}
+@media (max-width: 400px){
+    .carousel-inner .carousel-item img{
+        height: 200px;
+    }
+    .carousel-inner h2{
+        font-size: 17px;
+    }
+    .navbar .navbar-brand{
+        font-size: 12px;
+    }
+    #home{
+        padding-top: 200px;
+    }
+}
+
+/*style footer with transparent background*/
+.footer{
+    background-color: rgba(255,202,10,0.3);
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 150px;
+    font-size: 15px;
+    text-align: left;
+}

@@ -1,0 +1,69 @@
+body{
+    background: url(images/winter_scene.jpg) center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/*Header*/
+#header{
+    text-align: center;
+    font-size: 7vw;
+    padding-top: 75px;
+}
+
+/*Lap*/
+#lap{
+    text-align: right;
+    font-size: 4vw;
+}
+
+/*Time*/
+#time{
+    text-align: center;
+    font-size: 10vw;
+}
+
+/*Buttons*/
+#controlsContainer{
+    margin-bottom: 100px;
+}
+
+.control{
+    color: white;
+    background-color: #d7a04e;
+    border-radius: 100%;
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+    padding: 20% 0;
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+
+.control:active{
+    color: #d7a04e;
+    background-color: #fff;
+}
+
+/*laps*/
+#laps{
+    max-height: 270px;
+    overflow-y: scroll;
+    margin-bottom: 100px;
+}
+
+.lap{
+    height: 50px;
+    border-bottom: 1px solid #fff;
+    margin: 15px;
+}
+
+.laptimetitle{
+    font-size: 1.5em;
+    float: left;
+}
+
+.laptime{
+    font-size: 2em;
+    float: right;
+}

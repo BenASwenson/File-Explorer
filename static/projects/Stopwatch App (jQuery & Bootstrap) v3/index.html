@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="styling.css" rel="stylesheet">
+
+    <title>Stopwatch App</title>
+  </head>
+  <body>
+      <!--Title-->
+      <div class="container-fluid">
+          <div id="header">Stopwatch</div>
+      
+      
+          <!--Laptime-->
+          <div id="lap"><span id="lapminute">00</span>:<span id="lapsecond">00</span>:<span id="lapcentisecond">00</span></div>
+
+          <!--Time-->
+          <div id="time"><span id="timeminute">00</span>:<span id="timesecond">00</span>:<span id="timecentisecond">00</span></div>
+
+          <!--Controls-->
+          <div class="row" id="controlsContainer">
+              <div class="col-2 offset-4">
+                  <div id="startButton" class="control">
+                      Start
+                  </div>
+                  <div id="stopButton" class="control">
+                      Stop
+                  </div>
+                  <div id="resumeButton" class="control">
+                      Resume
+                  </div>
+              </div>
+              <div class="col-2">
+                  <div id="lapButton" class="control">
+                      Lap
+                  </div>
+                  <div id="resetButton" class="control">
+                      Reset
+                  </div> 
+              </div>
+          </div>
+          
+          <!--Laps-->
+          <div id="laps">
+          </div>
+      </div>
+   
+
+   
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="stopwatch.js"></script>
+  </body>
+</html>
